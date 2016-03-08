@@ -24,11 +24,11 @@ $(function () {
 			var config = $.extend({}, {
 				//path: 'images/logo-ps-eco.png',
 
-				text: 'Votre textejqg',
+				text: 'Votre texte',
 				textWidth: 530,
 				textSize: 34,
 				textColor: 'rgba(229, 0, 64, 1)',
-				textBg: 'rgba(0, 0, 0, 1)',
+				textBg: 'rgba(0, 0, 0, 0)',
 
 				gravity: 's', // nw | n | ne | w | e | sw | s | se
 				opacity: 1,
