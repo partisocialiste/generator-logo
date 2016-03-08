@@ -1,0 +1,139 @@
+$icon-font-path: '../fonts/';
+
+/*16px = 1rem (base)
+18px = 1.125rem
+20px = 1.25rem
+22px = 1.375rem
+24px = 1.5rem
+26px = 1.625rem
+28px = 1.75rem
+30px = 1.875rem
+32px = 2rem
+34px = 2.125rem
+36px = 2.25rem
+38px = 2.375rem
+40px = 2.5rem
+60px = 3.75rem
+80px = 5rem*/
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+// endbower
+
+// Variables and mixin
+@mixin center($xy:xy) {
+  @if $xy == xy {
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    @include transform(translateX(-50%) translateY(-50%));
+  }
+  @else if $xy == x {
+    left: 50%;
+    right: auto;
+    @include transform(translateX(-50%));
+  }
+  @else if $xy == y {
+    top: 50%;
+    bottom: auto;
+    @include transform(translateY(-50%));
+  }
+}
+
+$rouge: #e20040; // red PS
+$white: #ffffff; //white
+
+// /Variables and mixin
+
+html, body{
+  height:100%;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-size: 1rem;
+}
+.alert-ie {
+  background-color: #e20040;
+  color: #fff;
+  padding: 15px;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+.alert-ie a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.alert-ie a:hover {
+  color: #fff;
+}
+.generator__logo__title {
+  h1 {
+    color: $rouge;
+    margin: 0 0 60px 0;
+  }
+}
+.generator__logo {
+  form {
+    width: 100%;
+    padding: 0 15px 0 15px;
+  }
+  .btn {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+  }
+  #linkDownload {
+    text-align: right;
+  }
+  .btn-dll {
+    background-color: $rouge;
+    color: $white;
+    font-size: 1.125rem;
+    font-weight: 200;
+    margin: 40px 0 0 0;
+    &:hover {
+      background-color: #c10238;
+    }
+  }
+}
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 30px;
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+/* Responsive */
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .generator__logo {
+    @include center();
+    position: relative;
+  }
+}
+@media screen and (max-width: 768px) {
+  .generator__logo .btn-dll {
+    margin: 20px 0;
+  }
+  .generator__logo {
+    #linkDownload {
+      text-align: center;
+    }
+    .btn-dll {
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,135 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr-FR"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Générateur de logo pour les fédérations et les sections du Parti socialiste">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Générateur de logo du Parti socialiste</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+    <!--
+    ...................................................
+    ...,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,...
+    ..,....................................         :,.
+    ..:...................................          ~,.
+    ..:..................................           ~,.
+    ..:.................................            ~,.
+    ..:................................  NNSN       ~,.
+    ..:..............................   NNNNSN      ~,.
+    ..:.............................    SSNSSS      ~,.
+    ..:.....PPPPPPPPPP…...SSSSSSSSS     NNNNIII     ~,.
+    ..:.....PPPPPPPPPPPP…SSSSSSSSSS    NIINNNN      ~,.
+    ..:.....PPPP....PPPPP.SSSS...      Z  N   NN    ~,.
+    ..:.....PPPP.....PPPP.SSSS..       N NN   NN    ~,.
+    ..:.....PPPP.....PPPP.SSSSSSSS.    NN N  N N    ~,.
+    ..:.....PPPP...PPPPP...SSSSSSSSSS               ~,.
+    ..:.....PPPPPPPPPPP.....    SSSSSS              ~,.
+    ..:.....PPPP...........      .SSSS              ~,.
+    ..:.....PPPP..........SSSS. SSSSS.              ~,.
+    ..:.....PPPP........  SSSSSSSSSS                ~,.
+    ..:................                             ~,.
+    ..:...............                              ~,.
+    ..:..............                               ~,.
+    ..:.............                                ~,.
+    ..,:~==========================================~,..
+    ...................................................
+    -->
+  </head>
+  <body>
+    <!--[if lt IE 9]>
+      <div class="alert-ie">
+        <i class="glyphicon glyphicon-info-sign"></i>
+        Le navigateur que vous utilisez <strong>n'est plus à jour</strong>. Pour une meilleure navigation, merci d'en <a href="http://browsehappy.com/" target="_blank" title="Télécharger une version plus récente de votre navigateur">télécharger</a> une version plus récente.</p>
+      </div>
+    <![endif]-->
+    <section class="generator__logo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="generator__logo__title">
+              <h1 class="text-center">Le générateur de logo</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <form id="watermarkConfig" class="form-horizontal">
+              <div class="form-group">
+                <div class="input-group-lg">
+                  <label for="text">Nom de la section ou de la fédération :</label>
+                  <input type="text" class="form-control" placeholder="Votre nom" name="text" id="text" class="inputLarge">
+                </div>
+              </div>
+
+              <!-- <p>
+                <label>Type de fichier :
+                  <select name="outputType" id="outputType">
+                    <option value="jpeg" selected="">jpeg</option>
+                    <option value="png">png</option>
+                  </select>
+                </label>
+              </p> -->
+              
+                <div class="form-group">
+                  <div class="text-right">
+                    <button type="reset" class="btn btn-default btn-warning"><i class="glyphicon glyphicon-refresh"></i> Réinitialiser</button>
+                    <button type="submit" class="btn btn-default btn-success">Créer <i class="glyphicon glyphicon-chevron-right"></i></button>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div id="linkDownload"></div>
+                </div>
+            </form>
+            
+          </div>
+          <div class="col-md-6 col-md-offset-1">
+            <div id="withWatermark" class="imageWrap"></div>      
+          </div>
+        </div>
+        <div class="footer">
+          <p>♥ from the WebteamPS</p>
+        </div>
+      </div>
+    </section>
+  
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-71273611-1');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/watermark/dist/jquery.watermark.min.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/plugins.js -->
+    
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
