@@ -40,7 +40,7 @@ $(function () {
 
 				done: function (imgURL) {
 					$withWatermark.html('<img id="imageDemo" class="img-responsive" src="' + imgURL + '">');
-					$withWatermarkLink.html('<a class="btn btn-dll" download="logo-custom-ps-social.png" href="' + imgURL + '"><i class="glyphicon glyphicon-floppy-disk"></i> Télécharger votre logo</a>');
+					$withWatermarkLink.html('<a class="btn btn-dll" href="' + imgURL + '"><i class="glyphicon glyphicon-floppy-disk"></i> Télécharger votre logo</a>');
 				},
 				fail: function () {
 					//$withWatermark.html('<span style="color: red;">Une erreur s\'est produite : ' + imgURL + '</span>');
