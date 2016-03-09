@@ -81,6 +81,18 @@ html, body{
     width: 100%;
     padding: 0 15px 0 15px;
   }
+  .alert-dll {
+    padding: 10px;
+    border: 1px solid #CCC;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-style: italic;
+    background-color: #F1F1F1;
+    p {
+      text-align: center;
+      margin: 0;
+    }
+  }
   .btn {
     -moz-osx-font-smoothing: grayscale;
     -webkit-transition-duration: 0.3s;
