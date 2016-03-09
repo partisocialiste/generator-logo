@@ -55,31 +55,41 @@ html, body{
   font-size: 1rem;
 }
 .alert-ie {
-  background-color: #e20040;
-  color: #fff;
+  background-color: $rouge;
+  color: $white;
   padding: 15px;
-  position: absolute;
-  z-index: 2;
   width: 100%;
 }
 .alert-ie a {
-  color: #fff;
+  color: $white;
   font-weight: bold;
   text-decoration: underline;
 }
 .alert-ie a:hover {
-  color: #fff;
+  color: $white;
 }
 .generator__logo__title {
   h1 {
     color: $rouge;
-    margin: 0 0 60px 0;
+    margin: 30px 0 60px 0;
   }
 }
 .generator__logo {
   form {
     width: 100%;
     padding: 0 15px 0 15px;
+  }
+  .alert-dll {
+    padding: 10px;
+    border: 1px solid #CCC;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-style: italic;
+    background-color: #F1F1F1;
+    p {
+      text-align: center;
+      margin: 0;
+    }
   }
   .btn {
     -moz-osx-font-smoothing: grayscale;
@@ -120,7 +130,8 @@ html, body{
     padding-right: 0;
   }
   .generator__logo {
-    @include center();
+    padding: 0 15px;
+    //@include center();
     position: relative;
   }
 }

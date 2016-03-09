@@ -2,7 +2,7 @@
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="fr-FR"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr-FR"><!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <meta name="description" content="Générateur de logo pour les fédérations et les sections du Parti socialiste">
@@ -19,6 +19,8 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+
+    <!--[if lt IE 10]><link rel="stylesheet" href="styles/ie.css"><![endif]-->
     
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
@@ -50,61 +52,78 @@
     ..,:~==========================================~,..
     ...................................................
     -->
+
+    <meta property="og:title" content="Générateur de logo du Parti socialiste" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://partisocialiste.github.io/generator-logo/dist/" />
+    <meta property="og:description" content="Générateur de logo pour les fédérations et les sections du Parti socialiste" />
+    <meta property="og:image" content="http://partisocialiste.github.io/generator-logo/dist/images/share-fb.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@partisocialiste" />
+    <meta name="twitter:creator" content="@partisocialiste" />
+    <meta name="twitter:title" content="Générateur de logo du Parti socialiste" />
+    <meta name="twitter:description" content="Générateur de logo pour les fédérations et les sections du Parti socialiste" />
+    <meta name="twitter:image" content="http://partisocialiste.github.io/generator-logo/dist/images/share.png" />
   </head>
   <body>
-    <!--[if lt IE 9]>
+    <!--[if lt IE 10]>
       <div class="alert-ie">
         <i class="glyphicon glyphicon-info-sign"></i>
         Le navigateur que vous utilisez <strong>n'est plus à jour</strong>. Pour une meilleure navigation, merci d'en <a href="http://browsehappy.com/" target="_blank" title="Télécharger une version plus récente de votre navigateur">télécharger</a> une version plus récente.</p>
       </div>
     <![endif]-->
     <section class="generator__logo">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="generator__logo__title">
-              <h1 class="text-center">Le générateur de logo</h1>
-            </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="generator__logo__title">
+            <h1 class="text-center">Le générateur de logo</h1>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-5">
-            <form id="watermarkConfig" class="form-horizontal">
-              <div class="form-group">
-                <div class="input-group-lg">
-                  <label for="text">Nom de la section ou de la fédération :</label>
-                  <input type="text" class="form-control" placeholder="Votre nom" name="text" id="text" class="inputLarge">
-                </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <form id="watermarkConfig" class="form-horizontal">
+            <div class="form-group">
+              <div class="input-group-lg">
+                <label for="text">Nom de la section ou de la fédération :</label>
+                <input type="text" class="form-control" placeholder="Votre nom" name="text" id="text" class="inputLarge">
               </div>
+            </div>
 
-              <!-- <p>
-                <label>Type de fichier :
-                  <select name="outputType" id="outputType">
-                    <option value="jpeg" selected="">jpeg</option>
-                    <option value="png">png</option>
-                  </select>
-                </label>
-              </p> -->
-              
-                <div class="form-group">
-                  <div class="text-right">
-                    <button type="reset" class="btn btn-default btn-warning"><i class="glyphicon glyphicon-refresh"></i> Réinitialiser</button>
-                    <button type="submit" class="btn btn-default btn-success">Créer <i class="glyphicon glyphicon-chevron-right"></i></button>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div id="linkDownload"></div>
-                </div>
-            </form>
+            <!-- <p>
+              <label>Type de fichier :
+                <select name="outputType" id="outputType">
+                  <option value="jpeg" selected="">jpeg</option>
+                  <option value="png">png</option>
+                </select>
+              </label>
+            </p> -->
             
-          </div>
-          <div class="col-md-6 col-md-offset-1">
-            <div id="withWatermark" class="imageWrap"></div>      
-          </div>
+            <div class="form-group">
+              <div class="text-right">
+                <button type="reset" class="btn btn-default btn-warning"><i class="glyphicon glyphicon-refresh"></i> Réinitialiser</button>
+                <button type="submit" class="btn btn-default btn-success">Créer <i class="glyphicon glyphicon-chevron-right"></i></button>
+              </div>
+            </div>
+            <div class="form-group">
+              <!--[if lt IE 10]>
+                <div class="alert-dll">
+                  <p>
+                    <i class="glyphicon glyphicon-floppy-disk "></i> Pour télécharger votre logo, faites clique droit sur l'image puis "Enregistrer sous l'image".
+                  </p>
+                </div>
+              <![endif]-->
+              <!--[if !IE]><!--><div id="linkDownload"></div> <!--<![endif]-->              
+            </div>
+          </form>
         </div>
-        <div class="footer">
-          <p>♥ from the WebteamPS</p>
+        <div class="col-sm-6">
+          <div id="withWatermark" class="imageWrap"></div>      
         </div>
+      </div>
+      <div class="footer">
+        <p>♥ from the WebteamPS</p>
       </div>
     </section>
   
