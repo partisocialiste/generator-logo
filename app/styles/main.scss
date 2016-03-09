@@ -73,7 +73,7 @@ html, body{
 .generator__logo__title {
   h1 {
     color: $rouge;
-    margin: 0 0 60px 0;
+    margin: 60px 0;
   }
 }
 .generator__logo {
@@ -133,7 +133,7 @@ html, body{
   }
   .generator__logo {
     padding: 0 15px;
-    @include center();
+    //@include center();
     position: relative;
   }
 }
